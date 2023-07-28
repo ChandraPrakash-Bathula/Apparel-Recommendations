@@ -4,33 +4,33 @@ Content Based Filtering and Recommendation
 
 ![Python](https://img.shields.io/badge/Python-3.7%2B-brightgreen.svg) ![Machine Learning](https://img.shields.io/badge/Machine_Learning-Deep_Learning-blue.svg) ![Image Processing](https://img.shields.io/badge/Image_Processing-NLP-orange.svg) ![Recommendation System](https://img.shields.io/badge/Recommendation_System-Content_Based_Filtering-yellow.svg)
 
+# Amazon Apparel Recommendation Engine
+
 ## Overview
 
-This project focuses on building a personalized recommendation system for apparel products using content-based filtering. The system recommends similar apparel products based on various attributes such as asin, brand, color, product type, image URL, title, and formatted price. Different techniques, including Bag of Words, TF-IDF, IDF, Word2Vec, IDF Weighted Word2Vec, and Convolutional Neural Networks (CNN), have been utilized to achieve accurate and relevant recommendations.
+This project implements a personalized apparel recommendation engine using content-based search with the Amazon API, NLTK, and Keras libraries. It involves processing over 180,000 apparel images from a JSON file for recommendation. Seven different approaches are utilized to recommend apparel, including Bag of Words, TF-IDF, Word2Vec, IDF, weighted Word2Vec, weighted similarity using brand and color, and visual features using Convolutional Neural Networks (CNN). The models are trained using GPU for efficient computation.
 
-## Steps Implemented
+## Implementation Steps
 
-1. Data Collection: We extracted over 180,000 apparel images and their attributes from the Amazon API to create our dataset.
+1. Data Preprocessing: The JSON file containing apparel images is extracted and preprocessed to ensure data quality. Irrelevant coordinates and trip details are removed, and data is prepared for clustering and segmentation.
 
-2. Data Preprocessing: We cleaned and processed the data, removing irrelevant coordinates, trip durations, speeds, and fares to ensure data quality.
+2. Clustering and Segmentation: The whole dataset is divided into clusters/segments/regions using K-Means clustering algorithm. Cluster numbers are assigned to each data point based on pickup coordinates.
 
-3. Clustering/Segmentation: New York City was divided into clusters/segments/regions based on pickup latitudes and longitudes using K-Means clustering.
+3. Time-Binning and Fourier Transform: Time-series data is analyzed using Fourier transform to identify significant amplitudes and frequencies. The data is then divided into 10-minute time bins for better predictions.
 
-4. Time-binning: We used Unix timestamps to group the data into 10-minute time intervals for prediction.
+4. Model Selection and Training: Seven different models, including Bag of Words, TF-IDF, Word2Vec, IDF, weighted Word2Vec, weighted similarity, and CNN, are implemented and trained on the preprocessed data using GPU.
 
-5. Smoothing Time-series Data: To avoid predicting zero pickups, we smoothed the training data and filled test data with zeros.
-
-6. Fourier Transform: A Fourier transform was applied to the time-series data to identify top amplitudes and corresponding frequencies.
+5. Evaluation and Comparison: The performance of each model is evaluated by calculating the average Euclidean distance for the top 20 recommended apparels. The results are compared using line plots and bar graphs to identify the best performing approaches.
 
 ## Observations
 
-- **TF-IDF Model**: The TF-IDF model emerged as the top-performing approach, providing the most accurate and relevant recommendations.
-- **Average Word2Vec Model**: The Average Word2Vec model also performed well, closely following the TF-IDF model in terms of recommendation accuracy.
-- **Bag of Words Model**: The Bag of Words model demonstrated a competitive performance, though not as accurate as TF-IDF and Average Word2Vec.
-- **Brand and Color Weighted Model**: The model incorporating brand and color as weighted features showcased promising results.
-- **IDF Model**: The IDF model, though effective, ranked lower than TF-IDF, Average Word2Vec, and Bag of Words.
-- **CNN Model**: The Convolutional Neural Network (CNN) approach for visual feature extraction played a significant role in improving recommendations.
+- The TF-IDF model exhibits the best recommendation performance, followed by AVERAGE WORD2VEC, BAG OF WORDS, BRAND AND COLOR, WEIGHTED WORD2VEC, IDF, and CNN, respectively.
+- The GPU-accelerated training of Word2Vec and CNN models ensures efficient computation and faster results.
+- The evaluation metrics indicate that the personalized recommendation engine provides accurate suggestions to users based on their preferences and product attributes.
+- The visual features extracted using CNN play a crucial role in improving the accuracy of recommendations for apparel products.
 
 ## Conclusion
 
-The apparel recommendation system successfully utilizes various content-based filtering techniques and visual feature extraction using CNN to provide accurate and relevant suggestions to users. The project's observations emphasize the effectiveness of the TF-IDF and Average Word2Vec models, while the inclusion of brand and color as weighted features also contributes to better recommendations. The system's implementation represents a significant step towards creating an engaging and efficient recommendation engine for apparel products.
+The personalized apparel recommendation engine showcases the superiority of content-based search methodologies and deep learning techniques. The implementation of various models and their evaluations through quantitative analysis ensures optimal results for end-users. The project demonstrates the efficiency of GPU-accelerated models for faster computation and improved recommendation accuracy.
+
+Feel free to explore the code and findings in the Jupyter Notebook provided in this repository. Your feedback and contributions are welcome! Happy recommending!
