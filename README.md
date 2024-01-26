@@ -1,4 +1,4 @@
-# Amazon Apparel-Recommendations.
+# Apparel-Recommendation System.
 Content Based Filtering and Recommendation
 # Amazon Apparel Recommendation System
 
