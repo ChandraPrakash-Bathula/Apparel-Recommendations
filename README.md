@@ -4,7 +4,7 @@ Content Based Filtering and Recommendation
 
 ![Python](https://img.shields.io/badge/Python-3.7%2B-brightgreen.svg) ![Machine Learning](https://img.shields.io/badge/Machine_Learning-Deep_Learning-blue.svg) ![Image Processing](https://img.shields.io/badge/Image_Processing-NLP-orange.svg) ![Recommendation System](https://img.shields.io/badge/Recommendation_System-Content_Based_Filtering-yellow.svg)
 
-# Amazon Apparel Recommendation Engine
+# Apparel Recommendation System to enhance Sales
 
 ## Overview
 
