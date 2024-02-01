@@ -12,7 +12,7 @@ This project implements a personalized apparel recommendation engine using conte
 
 ## Implementation Steps
 
-1. Data Preprocessing: The JSON file containing apparel images is extracted and preprocessed to ensure data quality. Irrelevant coordinates and trip details are removed, and data is prepared for clustering and segmentation.
+1. <b>Data Preprocessing:</b> The JSON file containing apparel images is extracted and preprocessed to ensure data quality. Irrelevant coordinates and trip details are removed, and data is prepared for clustering and segmentation.
 
 2. Clustering and Segmentation: The whole dataset is divided into clusters/segments/regions using K-Means clustering algorithm. Cluster numbers are assigned to each data point based on pickup coordinates.
 
