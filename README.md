@@ -1,4 +1,4 @@
-# Apparel-Recommendation System on Amazon Dataset
+# Apparel-Recommendation System
 
 Content Based Filtering and Recommendation System.
 
