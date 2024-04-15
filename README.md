@@ -1,6 +1,4 @@
-# Apparel-Recommendation System
-
-Content Based Filtering and Recommendation System.
+# Apparel-Recommendation System : Content Based Filtering and Recommendation System.
 
 ## Apparel Recommendation System using featurization techniques and CNN.
 
