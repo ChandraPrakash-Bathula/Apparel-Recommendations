@@ -31,6 +31,6 @@ This project implements a personalized apparel recommendation engine using conte
 
 ### Conclusion
 
-The personalized apparel recommendation engine showcases the superiority of content-based search methodologies and deep learning techniques. The implementation of various models and their evaluations through quantitative analysis ensures optimal results for end-users. The project demonstrates the efficiency of GPU-accelerated models for faster computation and improved recommendation accuracy.
+This personalized apparel recommendation engine showcases the superiority of content-based search methodologies and deep learning techniques. The implementation of various models and their evaluations through quantitative analysis ensures optimal results for end-users. The project demonstrates the efficiency of GPU-accelerated models for faster computation and improved recommendation accuracy.
 
 Feel free to explore the code and findings in the Jupyter Notebook provided in this repository. Your feedback and contributions are welcome! Happy recommending!
