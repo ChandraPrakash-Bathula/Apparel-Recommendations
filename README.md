@@ -2,7 +2,7 @@
 
 ## Apparel Recommendation System using featurization techniques and CNN
 
-![Python](https://img.shields.io/badge/Python-3.7%2B-brightgreen.svg) ![Machine Learning](https://img.shields.io/badge/Machine_Learning-Deep_Learning-blue.svg) ![Image Processing](https://img.shields.io/badge/Image_Processing-NLP-orange.svg) ![Recommendation System](https://img.shields.io/badge/Recommendation_System-Content_Based_Filtering-yellow.svg)![VGG-16 CNN](https://img.shields.io/badge/VGG-16 CNN.svg)
+![Python](https://img.shields.io/badge/Python-3.7%2B-brightgreen.svg) ![Machine Learning](https://img.shields.io/badge/Machine_Learning-Deep_Learning-blue.svg) ![Image Processing](https://img.shields.io/badge/Image_Processing-NLP-orange.svg) ![Recommendation System](https://img.shields.io/badge/Recommendation_System-Content_Based_Filtering-yellow.svg)![VGG-16](https://img.shields.io/badge/Model-VGG--16-blue?style=for-the-badge&logo=python)
 
 ## Apparel Recommendation System to enhance Sales
 
