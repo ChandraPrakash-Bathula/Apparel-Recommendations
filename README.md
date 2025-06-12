@@ -18,7 +18,7 @@ This project implements a personalized apparel recommendation engine using conte
 
 3. <b>Time-Binning and Fourier Transform:</b> Time-series data is analyzed using Fourier transform to identify significant amplitudes and frequencies. The data is then divided into 10-minute time bins for better predictions.
 
-4. <b>Model Selection and Training:</b> Seven different models, including Bag of Words, TF-IDF, Word2Vec, IDF, weighted Word2Vec, weighted similarity, and VCG-16 CNN, are implemented and trained on the preprocessed data using GPU.
+4. <b>Model Selection and Training:</b> Seven different models, including Bag of Words, TF-IDF, Word2Vec, IDF, weighted Word2Vec, weighted similarity, and VGG-16 CNN, are implemented and trained on the preprocessed data using GPU.
 
 5. <b>Evaluation and Comparison:</b> The performance of each model is evaluated by calculating the average Euclidean distance for the top 20 recommended apparels. The results are compared using line plots and bar graphs to identify the best performing approaches.
 
